@@ -100,7 +100,7 @@ public class Historia {
 		            System.out.println("Chefe: \"Muito bom! Podemos incluir isso nas metas trimestrais.\"");
 		            controlador = false;
 		        } else if(escolha == 2) {
-		            System.out.println("Você finge estar ocupado. Mais tarde ouve comentários sobre a importância da reunião. Você pensa: (Eu deveria me empenhar mais...)");
+		            System.out.println("Você finge estar ocupado. Mais tarde ouve comentários sobre a importância da reunião\n. Você pensa: \"Eu deveria me empenhar mais...\"");
 		            controlador = false;
 		        } else {
 		        	System.out.println("Digite um número entre as opções.");
@@ -124,6 +124,7 @@ public class Historia {
         if (!personagem.tomouCafe(1) && !personagem.tomouCafe(2)) {
             System.out.println("Durante a reunião, você começa a suar frio. Sua visão escurece e você desmaia.");
             System.out.println("Mais tarde, no ambulatório, o médico diz: \"Seu corpo está cobrando a falta de cuidados. Precisa se alimentar melhor.\"");
+            System.out.println("Seu chefe fica descontente e diz: \"Você deveria se cuidar mais, espero que esse ocorrido não venha a se repetir./");
         } else {
             System.out.println("Você acompanha a reunião com atenção.");
             System.out.println("Quando mencionam projetos ambientais, você é lembrado por sua participação.");
@@ -137,11 +138,11 @@ public class Historia {
         System.out.println("\n=== Final da História ===");
 
         if (scoreAmb == 2 && scoreSaude == 2) {
-            System.out.println("Final Bom: Você se destacou no trabalho, lidera o projeto ambiental e sente-se bem consigo mesmo.");
+            System.out.println("Final Bom: Você se destacou no trabalho, lidera o projeto ambiental e sente-se bem consigo mesmo. Será que existe uma promoção próxima?");
         } else if (scoreAmb >= 1 && scoreSaude >= 1) {
             System.out.println("Final Neutro: Sua semana foi razoável, com altos e baixos, mas você está no caminho certo.");
         } else {
-            System.out.println("Final Ruim: Você foi desligado da empresa e se sente cansado e desconectado. Talvez seja hora de rever suas escolhas.");
+            System.out.println("Final Ruim: Seu chefe te chama a sala dele e informar que você foi desligado da empresa! Você se sente cansado e desconectado. Talvez seja hora de rever suas escolhas.");
         }
     }
 }
