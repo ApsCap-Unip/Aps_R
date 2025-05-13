@@ -35,7 +35,9 @@ public class Personagem {
     public int getPontuacaoAmbiental() {
         int score = 0;
         for (int i = 1; i <= 2; i++) {
-            if (getEscolhaAmbiental(i)) score++;
+            if (getEscolhaAmbiental(i)){
+		    score++;
+	    }
         }
         return score;
     }
@@ -43,7 +45,9 @@ public class Personagem {
     public int getPontuacaoSaude() {
         int score = 0;
         for (int i = 1; i <= 2; i++) {
-            if (tomouCafe.get(i)) score++;
+            if (tomouCafe.get(i)){
+		    score++;
+	    }
         }
         return score;
     }
