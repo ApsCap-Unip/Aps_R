@@ -174,14 +174,14 @@ public class Historia {
                     personagem.setEscolhaAmbiental(dia);
                     System.out.println("Você escolhe uma opção sustentável e sente-se bem com isso.");
                     break;
-                } else if (escolha == 1 && resultado > 15) {
+                } else if (escolha == 2 && resultado > 15) {
                 	System.out.println("\n🎲 Você rolou um D20 para pontencialiazar sua escolha... Resultado: " + resultado);
                 	personagem.adicionarTempoEconomizado(10);
                 	personagem.setEscolhaAmbiental(dia);
                 	System.out.println("Você escolhe uma opção sustentável e sente-se bem com isso. Você olha em volta e vê o trânsito na cidade e pens: \"Que bom que não fui de carro hoje\"");
                 	System.out.println("Você sente o vento no rosto e vê a cidade com outros olhos.");
                 	break;
-                } else if (escolha == 1 && resultado < 10) {
+                } else if (escolha == 2 && resultado < 10) {
                 	System.out.println("\n🎲 Você rolou um D20 para pontencialiazar sua escolha... Resultado: " + resultado);
                 	personagem.adicionarTempoEconomizado(-5);
                 	personagem.setEscolhaAmbiental(dia);
